@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logoguest4.png" type="image/png">
+    <title>Home | SeeBreeze</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="https://kit.fontawesome.com/62c6fa98f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="LogoAndName">
+            <img id="logoImg" src="Images/logoguest4.png" alt="logo">
+        </div>
+
+        <div class="NavOpenClose">
+            <div class="NOC" id="NOCOpen">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="NOC" id="NOCClose">
+                <i class="fa-solid fa-x"></i>
+            </div>
+        </div>
+
+        <div class="NavbarAndRequest">
+            <nav>
+                <div class="Navbar">
+                    <ul class="NavbarUl">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Pricing">Pricing</a></li>
+                        <li><a href="#Footer">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="RequestContainer">
+                    <div class="RequestClass">
+                        <a href="ContactUs.html" class="button-content">Request Quote</a>
+                    </div>
+                </div> -->
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="SectionHome" id="Home">
+            <!-- <div class="Homebackground"></div> -->
+            <div class="SlidesParent">
+                <div class="Home">
+                    <img id="homeimg" src="Images/sea4.jpg" alt="">
+                    
+                    <div class="Homebackground"></div>
+                </div>
+                <div class="Home">
+                    <img id="homeimg" src="Images/sea2.jpg" alt="">
+                    
+                    <div class="Homebackground"></div>
+                </div>
+                <div class="Home">
+                    <img id="homeimg" src="Images/sea3.jpg" alt="">
+                    
+                    <div class="Homebackground"></div>
+                </div>
+            </div>
+            <div class="HomeContainer">
+                <div class="HomeContainer1">
+                    <div class="HomeContainer1Wrap">
+                        <h1>Experience Your Perfect</h1>
+                        <span id="HC1WTitiles"></span>
+                        <div class="HomeC1Contact">
+                            <a href="tel:7569784047">Book your stay</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="HomeContainer2">
+                    <div class="AboutContainerPhone">
+                        <div class="AboutContainerPhoneWrap">
+                            <div class="ACPWImg">
+                                <img id="ACPWIMainPerson" src="Images/person.png" alt="Person">
+                                <img id="ACPWIMainImg" src="Images/Iphone.png" alt="Iphone, tranparent image">
+                                <div class="ListOfImagesInPhone">
+                                    <img class="LOIIPEach" id="LOIIP1" style="z-index: 1;" src="Images/imageSlide1.png" alt="">
+                                    <img class="LOIIPEach" id="LOIIP2" src="Images/imageSlide2.png" alt="">
+                                    <img class="LOIIPEach" id="LOIIP3" src="Images/imageSlide3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+
+
+            <section class="ClockFeature">
+                <div class="ClockFeatureConatiner">
+                    <div class="CFCLeft">
+                        <div class="clock-dial">
+                            <div class="hour hour-1">1</div>
+                            <div class="hour hour-2">2</div>
+                            <div class="hour hour-3">3</div>
+                            <div class="hour hour-4">4</div>
+                            <div class="hour hour-5">5</div>
+                            <div class="hour hour-6">6</div>
+                            <div class="hour hour-7">7</div>
+                            <div class="hour hour-8">8</div>
+                            <div class="hour hour-9">9</div>
+                            <div class="hour hour-10">10</div>
+                            <div class="hour hour-11">11</div>
+                            <div class="hour hour-12">12</div>
+                      
+                            <div class="Note-wrapper" id="Note-wrapper">
+                              <div class="Notes">
+                                <img id="Rs100" src="Images/100.png" alt="100">
+                                <img id="Rs500" src="Images/500.png" alt="500">
+                                <img id="Rs2000" src="Images/2000.png" alt="2000">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CFCRight">
+                        <div class="CFCRContext">
+                            <h1>Nithin</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, tempore?</p>
+                        </div>
+                    </div>
+                    <span id="closeClock" onclick="closeClockContainer()"><i class="fa-solid fa-circle-xmark"></i></span>
+                </div>
+            </section>
+        
+        </section>
+        <section class="Whatsapp">
+            <div class="WhatsappIcon">
+                <a href="https://wa.me/9885038181">
+                    <img id="WAIcon" src="Images/whatsapp.png" alt="WhatsappIcon">
+                </a>
+            </div>
+        </section>
+        
+        <section class="About" id="About">
+            <div class="AboutContainer">
+                <div class="AboutContainer1">
+
+                    <div class="AboutContainer1Left">
+                        <div class="AboutContainer1LeftWrap">
+                            <div class="AC1LWH1">
+                                <h1>About Us</h1>
+                            </div>
+                            <div class="AC1LWContext">
+                                <p>Welcome to [Guest House Name] – Your Home Away From Home in Visakhapatnam, where comf
+                                    ort meets convenience in the heart of the city. Nestled close to [Beach Road/RK Beach/Rushik
+                                    onda Beach/Railway Station], our guest house offers affordable yet cozy accommodation for
+                                    
+business travelers, families, and vacationers alike. With easy access to popular attractions like Kailasagiri, Submarine Museum, Bheemili Beach, and Araku Valley, you’ll enjoy the perfect blend of r
+                                    elaxation, accessibility, and warm hospitality during your stay in Vizag.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="AboutContainer1Right">
+                        <div class="AC1RImg"><img src="Images/sea7.jpg" alt="image"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Services" id="Services">
+            <div class="ServicesContainer">
+                <div class="ServicesContainerText">
+                    <h1>Services we Provide</h1>
+                </div>
+
+                <div class="ServicesWeProvide">
+                    <div class="EachServiceConatiner">
+                        <div class="EachService">
+                            <div class="ESPadding">
+                                <i id="ESPClass" class="fa-solid fa-location-dot"></i>
+                                <h3>Prime Location</h3>
+                                <p>Strategically located near [Beach Road/RK Beach/Rushikonda Beach/Railway Station], offering easy access to Vizag's top attractions including Kailasagiri, Submarine Museum, Bheemili Beach, and Araku Valley. Our central location saves valuable travel time and puts you close to all major tourist spots.</p>
+                            </div>
+                        </div>
+                        <div class="EachService">
+                            <div class="ESPadding">
+                                <i id="ESPClass" class="fa-solid fa-bowl-food"></i>
+                                <h3>Home-Cooked Meals</h3>
+                                <p>Enjoy authentic Andhra cuisine prepared fresh with locally-sourced ingredients in our in-house kitchen. We accommodate special dietary requirements and serve delicious home-style meals with every bite made with care.</p>
+                            </div>
+                        </div>
+                        <div class="EachService">
+                            <div class="ESPadding">
+                                <i id="ESPClass" class="fa-regular fa-paper-plane"></i>
+                                <h3>Convenient Access</h3>
+                                <p>Located close to Vizag's best restaurants, shopping centers, entertainment venues, and local markets. Medical facilities, ATMs, and public transport are just minutes away for your convenience.</p>
+                            </div>
+                        </div>
+                        <div class="EachService">
+                            <div class="ESPadding">
+                                <i id="ESPClass" class="fa-regular fa-lightbulb"></i>
+                                <h3>Warm Hospitality</h3>
+                                <p>Our friendly staff treats every guest like family, providing personalized service and local recommendations 24/7. Get insider tips on the best restaurants, attractions, and travel arrangements to make your Vizag experience memorable.</p>
+                            </div>
+                        </div>
+                        <div class="EachService">
+                            <div class="ESPadding">
+                                <i id="ESPClass" class="fa-solid fa-indian-rupee-sign"></i>
+                                <!-- <i id="ESPClass" class="far fa-credit-card"></i> -->
+                                <h3>Affordable Rates</h3>
+                                <p>Quality accommodation at competitive prices with transparent pricing and no hidden charges. Perfect for budget-conscious travelers, families, and business professionals seeking value for money.</p>
+                            </div>
+                        </div>
+                        <!-- <div class="EachService">
+                            <div class="ESPadding">
+                                <i id="ESPClass" class="far fa-user-circle"></i>
+                                <h3>The Procedure</h3>
+                                <ul class="ESPUl">
+                                    <li><span id="ESPUlSpan"><i class="fa-solid fa-check"></i></span>Contact Us</li>
+                                    <li><span id="ESPUlSpan"><i class="fa-solid fa-check"></i></span>Talk to our tax expert & submit documents</li>
+                                    <li><span id="ESPUlSpan"><i class="fa-solid fa-check"></i></span>Return filed by our expert team</li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="EachService">
+                            <div class="ESPadding">
+                                <i id="ESPClass" class="far fa-credit-card"></i>
+                                <h3>Best Accommodations</h3>
+                                <p>Spotlessly clean, well-maintained rooms equipped with air conditioning, high-speed Wi-Fi, 24/7 hot water, and comfortable bedding. Our thoughtfully furnished rooms create a cozy, home-like atmosphere for a restful stay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Pricing" id="Pricing">
+            <div class="PricingContainer">
+                <div class="PCH1"><h1>Price Details </h1></div>
+
+                <!-- <div class="PricingContainerTitle"><h1>ITR Filing</h1></div> -->
+                <div class="PricingList">
+                    <div class="PricingListEachContainer" id="SalaryPlan">
+                        <div class="PLECBox">
+            
+                            <!-- <div class="PLECBC1">
+                                <div class="PLECBC1Wrap">
+                                    <h2>Salary Plan</h2>
+                                    <span>Salary Income</span>
+                                </div>
+                            </div>
+             -->
+                            <div class="PLECBC2">
+                                <div class="PLECBC2Wrap">
+            
+                                    <div class="PLECBC2WContainerRP">
+                                        <div class="PLECBC2Cost">
+                                            <div class="PLECBC2CValue">
+                                                <span>₹</span>
+                                                <h1>1200/-</h1>
+                                            </div>
+                                            <p>Inclusive of Taxes.</p>
+                                        </div>
+            
+                                        <div class="PLECBC2Details">
+                                            <ul class="PLECBC2DUl">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Single Room</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>AC Available</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>TV Available</li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+            
+                                    <div class="PLECBC2WContainer" id="SalaryPlanC2">
+                                        <div class="PLECBC2WContact">
+                                            <a href="tel:7569784047">Contact Us</a>
+                                        </div>
+            
+                                        <p id="Guarantee" >Guaranteed best price.</p>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="PricingListEachContainer" id="BusinessPlan">
+                        <div class="PLECBox">
+            
+                            <!-- <div class="PLECBC1">
+                                <div class="PLECBC1Wrap">
+                                    <h2>Business Plan</h2>
+                                 </div>
+                            </div> -->
+            
+                            <div class="PLECBC2">
+                                <div class="PLECBC2Wrap">
+            
+                                    <div class="PLECBC2WContainerRP">
+                                        <div class="PLECBC2Cost">
+                                            <div class="PLECBC2CValue">
+                                                <span>₹</span>
+                                                <h1>2000/-</h1>
+                                            </div>
+                                            <p>Inclusive of Taxes.</p>
+                                        </div>
+            
+                                        <div class="PLECBC2Details">
+                                            <ul class="PLECBC2DUl">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Double Room</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>AC Available</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>TV Available</li>
+                                                <hr id="hr">
+                                        
+                                            </ul>
+                                        </div>
+                                    </div>
+            
+                                    <div class="PLECBC2WContainer" id="BusinessPlanC2">
+                                        <div class="PLECBC2WContact">
+                                            <a href="tel:7569784047">Contact Us</a>
+                                        </div>
+            
+                                        <p id="Guarantee" >Guaranteed best price.</p>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- <div class="PricingListEachContainer" id="InvestorPlan">
+                        <div class="PLECBox">
+            
+                            <div class="PLECBC1">
+                                <div class="PLECBC1Wrap">
+                                    <h2>Investor Plan</h2>
+                                </div>
+                            </div>
+            
+                            <div class="PLECBC2">
+                                <div class="PLECBC2Wrap">
+            
+                                    <div class="PLECBC2WContainerRP">
+                                        <div class="PLECBC2Cost">
+                                            <div class="PLECBC2CValue">
+                                                <span>₹</span>
+                                                <h1>1499/-</h1>
+                                            </div>
+                                            <p>Inclusive of Taxes.</p>
+                                        </div>
+            
+                                        <div class="PLECBC2Details">
+                                            <ul class="PLECBC2DUl">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Profit or Loss from Shares and Mutual Funds.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Sale of Immovable Property.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Business & Professional Income (Non Audit).</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Salary Income.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Rental Income.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Interest Income from Fixed Deposite.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Agricultural Income.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+            
+                                    <div class="PLECBC2WContainer" id="InvestorPlanC2">
+                                        <div class="PLECBC2WContact">
+                                            <a href="">Contact Us</a>
+                                        </div>
+            
+                                        <p id="Guarantee" >Guaranteed best price.</p>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div> 
+                    </div> -->
+                    <!-- <div class="PricingListEachContainer" id="TeaderPlan">
+                        <div class="PLECBox">
+            
+                            <div class="PLECBC1">
+                                <div class="PLECBC1Wrap">
+                                    <h2>Trader Plan</h2>
+                                    <span>Salary Income</span>
+                                </div>
+                            </div>
+            
+                            <div class="PLECBC2">
+                                <div class="PLECBC2Wrap">
+            
+                                    <div class="PLECBC2WContainerRP">
+                                        <div class="PLECBC2Cost">
+                                            <div class="PLECBC2CValue">
+                                                <span>₹</span>
+                                                <h1>1799/-</h1>
+                                            </div>
+                                            <p>Inclusive of Taxes.</p>
+                                        </div>
+            
+                                        <div class="PLECBC2Details">
+                                            <ul class="PLECBC2DUl">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Profit or Loss from Shares, Mutual Funds and Derivatives(Futures and Options)</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Sale of Immovable Property.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Business & Professional Income (Non Audit).</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Salary Income.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Rental Income.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Interest Income from Fixed Deposite.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Agricultural Income.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+            
+                                    <div class="PLECBC2WContainer" id="InvestorPlanC2">
+                                        <div class="PLECBC2WContact">
+                                            <a href="">Contact Us</a>
+                                        </div>
+            
+                                        <p id="Guarantee" >Guaranteed best price.</p>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    
+                    
+                </div> -->
+
+                <!-- <div class="PricingContainerTitle"><h1 id="Pricing2ndTitle">Tax Planning</h1></div> -->
+                <!-- <div class="PricingList">
+                    <div class="PricingListEachContainer" id="TaxSavingPlan">
+                        <div class="PLECBox">
+
+                            <div class="PLECBC1">
+                                <div class="PLECBC1Wrap">
+                                    <h2>TAX SAVING PLAN</h2>
+                                    <span>Invest Tax wisely</span>
+                                </div>
+                            </div>
+
+                            <div class="PLECBC2">
+                                <div class="PLECBC2Wrap">
+
+                                    <div class="PLECBC2WContainerRP">
+                                        <div class="PLECBC2Cost">
+                                            <div class="PLECBC2CValue">
+                                                <span>₹</span>
+                                                <h1>499/-</h1>
+                                            </div>
+                                            <p>Inclusive of Taxes.</p>
+                                        </div>
+    
+                                        <div class="PLECBC2Details">
+                                            <ul class="PLECBC2DUl">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Customizable plan to invest your savings in order to save Tax Legally.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Tax calculation and saving opportunities based on your tax slab.</li>
+                                                <hr id="hr">
+                                                <li><span><i class="fa-regular fa-circle-check"></i></span>Advance tax calculation based on source of income.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="PLECBC2WContainer" id="TaxSavingPlanC2">
+                                        <div class="PLECBC2WContact">
+                                            <a href="">Contact Us</a>
+                                        </div>
+    
+                                        <p id="Guarantee" >Guaranteed best price.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                
+                </div> -->
+            </div>
+        </section>
+
+        <!-- <section class="Brands">
+            <div class="BrandsHappyClients">
+                <div class="OurHappyClients"><h1>OUR HAPPY CLIENTS</h1></div>
+            <div class="BrandAndClients">
+
+                <div class="ClientsContainer">
+                    
+                    <div class="ClientsContainerNew">
+                        <div class="ClientsContainerWrap">
+                            <div class="ClientsContainerWrapBox">
+                                <div class="CCWBEach">
+                                    <div class="CCWBEachSymbol"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="CCWBEachPara"><p>I had always found tax planning and filing my ITR to be stressful until I started using TaxAmigos. Their team is incredibly knowledgeable and made the entire process seamless. They identified numerous deductions I was unaware of, saving me a significant amount on my taxes. What impressed me the most was their patience in answering all my queries. I highly recommend their services to anyone looking for efficient and stress-free tax management. They truly are the amigos you need for your taxes!</p></div>
+                                    <div class="CCWBNAD">
+                                        <h1>Rahul Saurav<br><span>Entrepreneur</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ClientsContainerWrap">
+                            <div class="ClientsContainerWrapBox">
+                                <div class="CCWBEach">
+                                    <div class="CCWBEachSymbol"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="CCWBEachPara"><p>TaxAmigos has been a game-changer for my business’s tax planning and ITR filing. Their expertise and professionalism are unmatched. They meticulously reviewed my financials and provided strategic advice that optimized my tax liability. Their timely updates and prompt responses to my concerns were highly reassuring. Thanks to TaxAmigos, I no longer dread tax season. Their service is exceptional and has significantly improved my financial management.</p></div>
+                                    <div class="CCWBNAD">
+                                        <h1>Nithin Veerendra<br><span>R&D Engineer</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ClientsContainerWrap">
+                            <div class="ClientsContainerWrapBox">
+                                <div class="CCWBEach">
+                                    <div class="CCWBEachSymbol"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="CCWBEachPara"><p>I was overwhelmed by the complexity of tax planning and ITR filing until a friend recommended TaxAmigos. Their team’s expertise and commitment to customer satisfaction are remarkable. They took the time to understand my financial situation and provided tailored advice that maximized my tax savings. The process was incredibly efficient, and their transparent communication kept me informed at every step. I highly recommend TaxAmigos to anyone seeking top-notch tax planning services.</p></div>
+                                    <div class="CCWBNAD">
+                                        <h1>Durga Prasad<br><span>Entrepreneur</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ClientsContainerWrap">
+                            <div class="ClientsContainerWrapBox">
+                                <div class="CCWBEach">
+                                    <div class="CCWBEachSymbol"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="CCWBEachPara"><p>Using TaxAmigos for my tax planning and ITR filing was the best decision I made this year. Their team is extremely professional and knowledgeable. They walked me through every step of the process, ensuring I understood all my options and the potential savings. The level of detail and care they put into their service is exceptional. TaxAmigos not only saved me money but also provided peace of mind knowing my taxes were handled correctly. Their customer service is top-tier, always prompt and helpful.</p></div>
+                                    <div class="CCWBNAD">
+                                        <h1>Rohit Sanghvi<br><span>Software Engineer</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ClientsContainerWrap">
+                            <div class="ClientsContainerWrapBox">
+                                <div class="CCWBEach">
+                                    <div class="CCWBEachSymbol"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="CCWBEachPara"><p>TaxAmigos has exceeded my expectations in every way. Their tax planning and ITR filing services are outstanding. From the initial consultation to the final submission, their team displayed unparalleled expertise and attention to detail. They identified tax-saving opportunities I hadn’t considered and ensured that my filing was accurate and timely. I appreciate their proactive approach and dedication to client satisfaction. TaxAmigos has made managing taxes a much simpler task, and I can’t thank them enough.</p></div>
+                                    <div class="CCWBNAD">
+                                        <h1>Tanvi Sharma<br><span>Entrepreneur</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ClientsContainerWrap">
+                            <div class="ClientsContainerWrapBox">
+                                <div class="CCWBEach">
+                                    <div class="CCWBEachSymbol"><i class="fa-solid fa-quote-left"></i></div>
+                                    <div class="CCWBEachPara"><p>TaxAmigos has revolutionized the way I handle my taxes. Their comprehensive tax planning and ITR filing services are truly impressive. The team is highly skilled and provided insightful advice that helped me save a substantial amount on my taxes. They made the entire process straightforward and stress-free, with clear instructions and constant support. I now have complete peace of mind during tax season, thanks to TaxAmigos. I highly recommend their services to anyone looking for expert tax assistance.</p></div>
+                                    <div class="CCWBNAD">
+                                        <h1>Senthil Meeran <br><span>Digital Entrepreneur</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ClientsSwapLeft"><button id="CSLBtn" onclick="nextSlide()"><i class="fa-solid fa-angle-left"></i></button></div>
+                    <div class="ClientsSwapRight"><button id="CSRBtn" onclick="prevSlide()"><i class="fa-solid fa-angle-right"></i></button></div>
+                </div>
+
+                <div class="BrandsContainer">
+                    <div class="BrandsContainerH1"><h1>Trusted by employees of top companies.</h1></div>
+                    <div class="BrandsContainerWrap">
+                        <div class="CompanyLogos" id="ReverseCL">
+                            <img class="CompanyLogosImg" src="Images/3.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/5.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/4.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/13.png" alt="">
+                            
+                            <img class="CompanyLogosImg" src="Images/6.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/7.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/8.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/9.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/10.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/11.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/3.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/5.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/4.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/13.png" alt="">
+                            
+                            <img class="CompanyLogosImg" src="Images/6.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/7.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/8.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/9.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/10.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/11.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/3.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/5.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/4.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/13.png" alt="">
+                            
+                            <img class="CompanyLogosImg" src="Images/6.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/7.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/8.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/9.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/10.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/11.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/3.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/5.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/4.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/13.png" alt="">
+                            
+                            <img class="CompanyLogosImg" src="Images/6.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/7.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/8.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/9.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/10.png" alt="starburgs">
+                            <img class="CompanyLogosImg" src="Images/11.png" alt="starburgs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section> -->
+
+        <!-- <section class="QuestionAndAnswersSection">
+            <div class="QuestionAndAnswers">
+                <div class="QAAContainer1">
+                    <div class="QAAContainer11">
+                        <h1>Get your ITR filed<br>NOW!!!</h1>
+                    </div>
+                    <div class="QAAContainer12">
+                        <button class="QAAC12btn">Start Filing</button>
+                    </div>
+                </div>
+                <div class="QAAContainer2">
+                    <div class="QAAC2Wrap">
+                        <div class="QAAC2WrapEach">
+                            <div class="QAAC2WEQuestion">
+                                <div class="QAAC2WEQH1"><h1>What is ITR filing?</h1></div>
+                                <div class="QAAC2WEQI" onclick="toggleAnswer('Answer1')"><img src="Images/downArrow.png" alt=""></div>
+                            </div>
+                            <div id="Answer1" class="Answer">ITR filing refers to Income Tax Return filing, where individuals report their income, deductions and taxes paid to Income Tax Department.</div>
+                        </div>
+                        <div class="QAAC2WrapEach">
+                            <div class="QAAC2WEQuestion">
+                                <div class="QAAC2WEQH1"><h1>When to file ITR?</h1></div>
+                                <div class="QAAC2WEQI" onclick="toggleAnswer('Answer2')"><img src="Images/downArrow.png" alt=""></div>
+                            </div>
+                            <div id="Answer2" class="Answer">The ITR filing deadline for salaried employees and other business owners is July 31st of every year. Tax Amigos is here to help you file your ITR promptly and save your taxes genuinely</div>
+                        </div>
+                        <div class="QAAC2WrapEach">
+                            <div class="QAAC2WEQuestion">
+                                <div class="QAAC2WEQH1"><h1>Which ITR to file?</h1></div>
+                                <div class="QAAC2WEQI" onclick="toggleAnswer('Answer3')"><img src="Images/downArrow.png" alt=""></div>
+                            </div>
+                            <div id="Answer3" class="Answer">The appropriate ITR form depends on your income sources. If your Income is only salary they ITR-1 is used. If you have sold Shares or Derivatives (Futures & Options) then ITR-3 is applicable. However if you have any other income, Tax Amigos can help you determine which return to file.</div>
+                        </div>
+                        <div class="QAAC2WrapEach">
+                            <div class="QAAC2WEQuestion">
+                                <div class="QAAC2WEQH1"><h1>Who should file ITR?</h1></div>
+                                <div class="QAAC2WEQI" onclick="toggleAnswer('Answer4')"><img src="Images/downArrow.png" alt=""></div>
+                            </div>
+                            <div id="Answer4" class="Answer">Any Individual with Income more than Basic Exemption Limit which is Rupees 2,50,000/- should file ITR. </div>
+                        </div>
+                        <div class="QAAC2WrapEach">
+                            <div class="QAAC2WEQuestion">
+                                <div class="QAAC2WEQH1"><h1>What are the benefits of filing ITR?</h1></div>
+                                <div class="QAAC2WEQI" onclick="toggleAnswer('Answer5')"><img src="Images/downArrow.png" alt=""></div>
+                            </div>
+                            <div id="Answer5" class="Answer">
+                                <ul class="AnswerUl">
+                                    <li>ITR is mandatory document for Loan approval from Banks.</li>
+                                    <li>ITR form as a proof for subsidies and Loans.</li>
+                                    <li>ITR is useful in VISA processing.</li>
+                                    <li>By filing ITR, losses can be carried forward to future years.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="QAAC2WrapEach">
+                            <div class="QAAC2WEQuestion">
+                                <div class="QAAC2WEQH1"><h1>Can I file a revised return after ITR is processed?</h1></div>
+                                <div class="QAAC2WEQI" onclick="toggleAnswer('Answer6')"><img src="Images/downArrow.png" alt=""></div>
+                            </div>
+                            <div id="Answer6" class="Answer">Yes, if there's an error in your original ITR, you can file a revised return. The only condition being the original ITR should be filed within due date.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <footer id="Footer">
+        <div class="footer">
+            <div class="footerContainer1">
+                <img src="Images/logoguest4.png" alt="">
+                <!-- <p><b>Welcome to TaxAmigos</b> – your trusted partner for hassle-free tax and accounting solutions. We specialize in ITR filing, tax planning, Provident Fund management, outsourced accounting, and GST compliance. Simplify your finances with our expert team.</p> -->
+                <!-- <div class="SocialMedia">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div> -->
+            </div>
+
+            <div class="footerContainer2">
+                <h2>Quick Links</h2>
+                <ul class="footerContainer2Ul">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Pricing">Pricing</a></li>
+                    <li><a href="tel:7569784047">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footerContainer3">
+                <h2>Get In Touch</h2>
+                <div class="footerContainer3Loc">
+                    <span><a href=""><i class="fa-solid fa-map-pin"></i></a></span>
+                    <a href="">Sea breeze guest house
+Opp Gokul Park
+Beach Road 
+Visakhapatnam 530002</a>
+                </div>
+                <div class="footerContainerMap">
+                    <a href="mailto:Seabreezegokulpark@gmail.com">Seabreezegokulpark@gmail.com</a>
+                    <a href="tel:9121919162">+91 9121919162</a>
+                    <a href="tel:9885038181">+91 9885038181</a>
+                </div>
+            </div>
+        </div>
+        <!-- <h4 id="line"></h4>
+        <div class="copyrights">
+           <span><i class="fa-regular fa-copyright"></i>  2024. All Rights Reserved. Designed by <a href="">ShiderTech</a></span>
+
+        </div>
+    </footer> -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="Js/index.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

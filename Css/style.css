@@ -1,0 +1,1643 @@
+
+
+
+
+/* 
+
+Based on the logo designs generated, here are the primary colors that were used:
+
+Ocean Blues:
+
+Dark Blue (Outer ring, "SB" shadow): #004A7C
+
+Medium Blue (Inner ring, "Sea Breeze" text): #0077BE
+
+Light Blue (Waves, Kailasagiri silhouette): #4A90E2
+
+Sunset & Accent Colors:
+
+Sunset Orange (Sky, "S" wave): #FF6B35
+
+Lighter Orange (Sun/Gradient): #FFA500
+
+Neutrals:
+
+Sandy Beige (Beach): #F4E4C1
+
+White (Guest House text, highlights): #FFFFFF
+
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    background: linear-gradient(to right, #FF6B35, F4E4C1);
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* -----------------------whatsapp-------------------- */
+
+.Whatsapp{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 600;
+}
+
+.WhatsappIcon a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#WAIcon{
+    color: white;
+    font-size: 50px;
+    background-color: #25d366;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#WAName{
+    display: none;
+}
+
+.Whatsapp:hover #WAName{
+    display: flex;
+}
+
+/* -----------------------Header-------------------- */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 56px;
+    row-gap: 15px;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    width: -webkit-fill-available;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 8px 3px #4399ca;
+}
+
+.LogoAndName{
+    width: 70px;
+}
+
+#logoImg{
+    height: auto;
+    width: 70px;
+    display: block;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.NavbarUl{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.NavbarUl li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.RequestContainer {
+    width: 168px;
+}
+
+.RequestClass a{
+    text-decoration: none;
+    color: white;
+}
+
+.NavOpenClose {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    height: 78.93px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NOC{
+    cursor: pointer;
+}
+
+.NOC i {
+    font-size: 25px;
+}
+
+
+/* added content */
+
+.RequestClass {
+    position: relative;
+    background: #FF6B35;
+    cursor: pointer;
+    height: 48.4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RequestClass:hover .button-content{
+    color: black;
+}
+  
+.RequestClass:hover::before {
+    transform: scaleX(1);
+}
+  
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+  
+.RequestClass::before {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: 48.4px;
+    background-color: #94c694;
+    transition: all 0.475s;
+}
+
+/* Above added content */
+
+@keyframes open {
+    from{
+        opacity: 0;
+        transform: translateX(100%)
+    }
+
+    to{
+        opacity: 1;
+        transform: rotate(0%);
+    }
+}
+
+@keyframes close {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+
+@media (width>=1024px) {
+    .NOC{
+        display: none;
+    }
+}
+
+@media (width<1024px) {
+    .NavbarAndRequest{
+        display: none;
+    }
+    #NOCClose{
+        display: none;
+    }
+    .NavbarUl{
+        gap: 25px;
+    }
+}
+
+@media (width<=419px) {
+    .NavOpenClose{
+        right: 0.5%;
+    }
+    .NavbarUl li a{
+        font-size: 16px;
+    }
+    header{
+        justify-content: space-between;
+    }
+}
+
+
+
+/* -----------------------Section Home-------------------- */
+
+.SectionHome{
+    height: 100dvh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* top: 78.93px; */
+}
+
+.Home{
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    flex-shrink: 0;
+    transition: transform 1.5s ease-in-out;
+}
+
+.Homebackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #101218;
+    opacity: 0.8;
+}
+
+.HomeContainer{
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.HomeContainer1{
+    width: 56%;
+}
+
+.HomeContainer1Wrap h1{
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+.HomeC1Contact{
+    width: fit-content;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.HomeC1Contact a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #FF6B35;
+}
+
+.HomeContainer2{
+    height: 100%;
+    display: flex;
+}
+
+#HC1WTitiles{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.typed-cursor{
+    font-size: 48px;
+}
+
+.SlidesParent{
+    display: flex;
+    width: 100%;
+}
+
+#homeimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.HomeTitles {
+    text-align: center;
+}
+
+.HomeContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    /* padding: 10px; */
+}
+
+.HomeTAndReq{
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.HomeTitles{
+    h1{
+        font-weight: bold;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+.HomeReq a{
+    padding: 15px 30px;
+    background-color: #006241;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.HomeSlideBtnLeft,.HomeSlideBtnRight{
+    position: absolute;
+    top: 78.93px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.HomeSlideBtnLeft{
+    left: 25px;
+}
+
+.HomeSlideBtnRight{
+    right: 25px;
+}
+
+.HomeReq{
+    text-align: center;
+}
+
+#HSB button{
+    border: none;
+    background-color: green;
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#HSB button i{
+    width: 23px;
+}
+
+@media (width=1024px) {
+    .HomeContainer1 {
+        width: 70%;
+    }
+    .HomeContainer1Wrap h1{
+        font-size: 70px;
+    }
+    #HC1WTitiles{
+        font-size: 36px;
+    }
+}
+
+@media (width<1024px) {
+    .HomeTAndReq {
+        gap: 40px;
+    }
+}
+
+@media (width<=769px) {
+    #HSB button{
+        opacity: 0.8;
+    }
+    .HomeContainer1{
+        width: 85%;
+    }
+    .HomeContainer1Wrap h1{
+        font-size: 50px;
+    }
+    #HC1WTitiles{
+        font-size: 30px;
+    }
+    .typed-cursor {
+        font-size: 34px;
+    }
+}
+
+
+
+
+
+/* -----------------------Clock-------------------- */
+
+.ClockFeature{
+    position: absolute;
+    z-index: 900;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ClockFeatureConatiner{
+    display: flex;
+    padding: 15px;
+    background-color: #006241;
+    border-radius: 15px;
+    margin-top: 80px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.CFCLeft {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #d3f8d3;
+}
+
+#closeClock{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#closeClock i{
+    font-size: 25px;
+}
+
+.CFCRight {
+    display: flex;
+    align-items: center;
+}
+
+.CFCRContext {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.CFCRContext h1{
+    margin-top: 0px;
+}
+
+.CFCRContext p{
+    margin-bottom: 0px;
+}
+
+.clock-dial {
+    width: 500px;
+    height: 500px;
+    border: 20px solid #006241;
+    background-color: #d3f8d3;
+    border-radius: 50%;
+    position: relative;
+}
+  
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: #563727;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+  
+.hour {
+    font-size: 30px;
+    font-weight: bold;
+    color: #372c2e;
+    position: absolute;
+}
+  
+.hour-1 {
+    top: 40px;
+    right: 130px;
+}
+.hour-2 {
+    top: 125px;
+    right: 45px;
+}
+.hour-3 {
+    top: 235px;
+    right: 10px;
+}
+.hour-4 {
+    top: 345px;
+    right: 45px;
+}
+.hour-5 {
+    top: 430px;
+    right: 130px;
+}
+.hour-6 {
+    bottom: 10px;
+    left: 240px;
+}
+.hour-7 {
+    top: 430px;
+    left: 130px;
+}
+.hour-8 {
+    top: 345px;
+    left: 45px;
+}
+.hour-9 {
+    top: 235px;
+    left: 10px;
+}
+.hour-10 {
+    top: 125px;
+    left: 45px;
+}
+.hour-11 {
+    top: 40px;
+    left: 130px;
+}
+.hour-12 {
+    top: 10px;
+    left: 235px;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #563727;
+    position: absolute;
+    top: 90px;
+    left: 42.5%;
+}
+
+.Note-wrapper {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    transition: transform 1s ease-in-out;
+}
+  
+.Notes {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Notes img{
+    width: 99px;
+    height: 197px;
+    position: absolute;
+}
+
+#Rs500,#Rs2000{
+    display: none; 
+}
+
+@media only screen and (width=1024px) {
+    .CFCRight {
+        width: 430px;
+    }
+}
+
+@media (width<=769px) {
+    .ClockFeatureConatiner{
+        width: 85%;
+    }
+    .CFCLeft{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #closeClock{
+        color: black;
+        right: 13px;
+        top: 13px;
+    }
+    .clock-dial{
+        width: 250px;
+        height: 250px;
+    }
+    .hour{
+        font-size: 16px;
+    }
+    .hour-1{
+        top: 20px;
+        right: 60px;
+    }
+    .hour-2 {
+        top: 60px;
+        right: 25px;
+    }
+    .hour-3 {
+        top: 47%;
+        right: 10px;
+    }
+    .hour-4 {
+        bottom: 60px;
+        right: 25px;
+        top: auto;
+    }
+    .hour-5 {
+        bottom: 25px;
+        right: 60px;
+        top: auto;
+    }
+    .hour-6{
+        bottom: 10px;
+        left: 48%;
+    }
+    .hour-7 {
+        bottom: 25px;
+        left: 60px;
+        top: auto;
+    }
+    .hour-8 {
+        bottom: 60px;
+        left: 25px;
+        top: auto;
+    }
+    .hour-9 {
+        top: 47%;
+        left: 10px;
+    }
+    .hour-10 {
+        top: 60px;
+        left: 25px;
+    }
+    .hour-11 {
+        top: 20px;
+        left: 60px;
+    }
+    .hour-12{
+        top: 10px;
+        left: 46%;
+    }
+    .Note-wrapper {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        right: 40px;
+        bottom: 40px;
+    }
+    .Notes img{
+        width: 50px;
+        height: 100px;
+    }
+}
+
+/* -----------------------Section About-------------------- */
+
+.About{
+    padding: 80px 20px;
+    /* padding-bottom: 0px; */
+}
+
+.AboutContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.AboutContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+.AboutContainer1Left {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.AC1LWH1 h1{
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+.AC1LWContext p{
+    font-size: 22px;
+}
+
+.AboutContainer1LeftWrap {
+    padding: 15px;
+    font-size: 23px;
+}
+
+.AboutContainer1Right {
+    width: 50%;
+}
+
+.AC1RImg img{
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.AboutContainerPhoneWrap {
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+
+.ACPWImg {
+    position: relative;
+}
+
+#ACPWIMainPerson{
+    position: absolute;
+    z-index: 200;
+    left: -140px;
+    bottom: 0;
+    height: 320px;
+    width: auto;
+}
+
+#ACPWIMainImg{
+    z-index: 100;
+    position: relative;
+    display: block;
+}
+
+.ListOfImagesInPhone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 15px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: absolute;
+}
+
+.LOIIPEach{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    transition: right 1s ease-in-out;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+@media (width<=769px) {
+    .AboutContainer1LeftWrap{
+        padding: 0%;
+    }
+    .AboutContainer1Left,
+    .AboutContainer1Right{
+        width: 100%;
+    }
+    .AC1RImg img{
+        height: 300px;
+    }
+}
+
+/* -----------------------Section Services-------------------- */
+
+.Services{
+    padding: 80px 20px;
+    /* padding-bottom: 0px; */
+    background: linear-gradient(to left, #d3f8d3, white);
+}
+
+.ServicesContainerText h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.EachServiceConatiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.EachService{
+    width: 380px;
+    height: 350px;
+    background-color:#FF6B35 ;
+    color: white;
+    border-radius: 5px;
+}
+
+.EachService:hover{
+    transform: scale(1.05);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.ESPadding{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.ESPadding p{
+    margin-top: 0px;
+}
+
+.ESPadding h3{
+    font-size: 23px;
+}
+
+.ESPadding #ESPClass{
+    font-size: 40px;
+    color: white;
+}
+
+.ESPUl {
+    list-style: none;
+    padding: 0px;
+}
+
+.ESPUl li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#ESPUlSpan{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+@media (width<769px) {
+    .ServicesContainerText h1{
+        font-size: 36px;
+    }
+}
+
+/* -----------------------Section Pricing-------------------- */
+
+.Pricing{
+    padding: 50px 20px;
+    /* padding-bottom: 0px; */
+}
+
+.PCH1 h1{
+    text-align: center;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.PricingContainerTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.PricingContainerTitle h1 {
+    font-size: 39px;
+    border-bottom: 3px solid;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-top: 35px;
+}
+
+.PricingList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.PricingListEachContainer{
+    width: 525px;
+    height: 589px;
+    background-color: #bbd9d9;
+    /* border-radius: 20px; */
+    border: 3px solid #FFA500;
+    transition: transform 1s;
+}
+
+.PricingListEachContainer:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.PLECBox{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+.PLECBC1{
+    width: 100%;
+    text-align: center;
+}
+
+.PLECBC1{
+    background-color: #F3F5F5;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+}
+
+.PLECBC1Wrap{
+    padding: 20px;
+    color: #0077BE;
+}
+
+.PLECBC1Wrap h2{
+    margin: 0px;
+}
+
+.PLECBC2{
+    height: 100%;
+    position: relative;
+}
+
+.PLECBC2Wrap{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.PLECBC2Cost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PLECBC2CValue span{
+    font-size: 39px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.PLECBC2CValue h1{
+    font-size: 39px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.PLECBC2CValue h1,.PLECBC2Cost p{
+    margin: 0px;
+}
+
+.PLECBC2CValue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.PLECBC2DUl{
+    padding: 0px;
+    margin: 30px 0px;
+}
+
+.PLECBC2DUl li{
+    display: flex;
+    gap: 15px;
+}
+
+#hr{
+    margin-left: 32px;
+}
+
+.PLECBC2WContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.PLECBC2WContact{
+    text-align: center;
+    line-height: 38px;
+}
+
+.PLECBC2WContact a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #FF6B35;
+}
+
+.PLECBC2WContact a:hover{
+    background-color: #94c694;
+}
+
+#Guarantee{
+    text-align: center;
+}
+
+#Pricing2ndTitle{
+    margin-top: 70px;
+}
+
+/* -------------------------------------Plans-------------------------------- */
+
+#SalaryPlan,
+#BusinessPlan{
+    height: 475px;
+}
+
+#TaxSavingPlan {
+    height: 400px;
+    width: 600px;
+}
+
+@media (width<769px) {
+    #SalaryPlan,#BusinessPlan{
+        height: 488px;
+    }
+    #TeaderPlan{
+        height: 625px;
+    }
+    #TaxSavingPlan{
+        height: 475px;
+    }
+}
+
+
+/* -----------------------Section Brands-------------------- */
+
+.Brands{
+    padding: 80px 0px;
+    background: linear-gradient(to left, #d3f8d3, white);
+}
+
+.BrandsHappyClients{
+    padding: 50px 0;
+    background-color: #006241;
+    margin: 0 10%;
+    margin-bottom: 0%;
+    border-radius: 20px;
+}
+
+.OurHappyClients h1{
+    text-align: center;
+    font-size: 39px;
+    color: white;
+    margin-top: 0px;
+}
+
+.BrandAndClients{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    /* imp */
+    padding: 0px 30px;
+}
+
+.ClientsContainer{
+    position: relative;
+    /* imp */
+    width: 48%;
+}
+
+.ClientsContainerNew {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    background-color: white;
+    /* imp */
+    /* width: 525px; */
+    width: -webkit-fill-available;
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+}
+
+.ClientsContainerWrap {
+    overflow: auto;
+    /* imp */
+    /* width: 525px; */
+    width: -webkit-fill-available;
+    box-sizing: border-box;
+    padding: 30px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.CCWBEachPara p {
+    font-size: 18px;
+}
+
+.ClientsContainerWrapBox{
+    cursor: -webkit-grabbing;
+}
+
+.CCWBEachSymbol i{
+    font-size: 34px;
+}
+
+.ClientsSwapLeft,.ClientsSwapRight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.ClientsSwapLeft{
+    left: 0;
+    padding-left: 5px;
+}
+
+.ClientsSwapRight{
+    right: 0;
+    padding-right: 5px;
+}
+
+#CSLBtn,#CSRBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 0;
+}
+
+#CSLBtn i,#CSRBtn i{
+    display: block;
+}
+
+.BrandsContainer{
+    width: 48%;
+}
+
+.BrandsContainerWrap{
+    overflow: hidden;
+    /* imp */
+    /* width: 525px; */
+    width: -webkit-fill-available;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: white;
+}
+
+.BrandsContainerH1 h1{
+    font-size: 24px;
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+}
+
+.CompanyLogos{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    animation: 60s scrolling infinite linear;
+}
+
+#ReverseCL{
+    transform: translateX(-300%);
+    animation: 60s Rscrolling infinite linear;
+}
+
+.CompanyLogosImg{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.CCWBNAD h1{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.CCWBNAD span{
+    font-size: 22px;
+    font-weight:lighter;
+}
+
+
+
+@keyframes scrolling {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-300%);
+    }
+}
+
+@keyframes Rscrolling {
+    from{
+        transform: translateX(-300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+
+@media (width<=769px) {
+    .ClientsContainer,.ClientsContainerNew,.ClientsContainerWrap{
+        width: 100%;
+    }
+    .ClientsContainer {
+        display: flex;
+        width: 90%;
+    }
+    .BrandsContainer {
+        width: 90%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .BrandsContainerWrap{
+        width: 100%;
+    }
+    .Brands{
+        margin: 0px;
+    }
+    .BrandsHappyClients{
+        margin: 0px 20px;
+    }
+    .BrandAndClients{
+        padding: 0px;
+    }
+    .CCWBEachPara p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* -----------------------QuestionAndAnswerr-------------------- */
+
+.QAAC12btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #006241;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+  
+.QAAC12btn:active {
+    scale: 0.92;
+}
+  
+.QAAC12btn:hover {
+    background: #006241;
+    background-color: #006241;
+    color: rgb(4, 4, 38);
+}
+
+
+.QuestionAndAnswers{
+    padding: 80px 6%;
+    /* padding-bottom: 50px; */
+}
+
+.QuestionAndAnswers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.QAAContainer1 {
+    width: 35%;
+    min-width: 230px;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.QAAContainer11 h1 {
+    text-align: center;
+}
+
+.QAAContainer11 p {
+    text-align: center;
+}
+
+.QAAContainer2{
+    width: 55%;
+}
+
+.QAAC2Wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 340px;
+    gap: 20px;
+}
+
+.QAAC2WrapEach{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.QAAC2WEQuestion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #006241;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+.QAAC2WEQH1 h1{
+    font-size: 24px;
+}
+
+.QAAC2WEQI {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.QAAC2WEQI img{
+    height: auto;
+    width: 22px;
+}
+
+.Answer{
+    display: none;
+    background-color: #d3f8d3;
+    z-index: 20;
+    padding: 30px 10px;
+    padding-bottom: 5px;
+    /* transform: translateY(-100%); */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+@keyframes identifier {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(-20%);
+    }
+}
+
+@keyframes backidentifier {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+
+@media (width<=769px) {
+    .QuestionAndAnswers{
+        justify-content: center;
+        gap: 120px;
+    }
+    .QAAContainer1,.QAAContainer2{
+        width: 100%;
+    }
+    .QAAC2Wrap{
+        min-width: auto;
+    }
+    .QAAC2WEQH1 h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* -----------------------footer-------------------- */
+
+footer{
+    background-color: #FF6B35;
+    color: white;
+}
+
+.footerContainer1 {
+    padding: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px white;
+}
+
+.footer{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerContainer1,.footerContainer3{
+    width: 350px;
+}
+
+/* .footerContainer2{
+    width: min-content;
+} */
+
+.footerContainer1 img{
+    height: 80%;
+    width: 100%;
+}
+
+.footerContainer2 h2{
+    font-size: 28px;
+}
+
+.footerContainer1 p{
+    font-size: 18px;
+}
+
+.SocialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.SocialMedia a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: #006241;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerContainer2Ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.footerContainer2Ul li{
+    font-size: 18px;
+}
+
+.footerContainer2Ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footerContainer3 h2{
+    font-size: 28px;
+}
+
+.footerContainer3Loc{
+    margin-bottom: 25px;
+}
+
+.footerContainer3Loc span i{
+    color: white;
+    font-size: 18px;
+}
+
+.footerContainerMap{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerContainer3 a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+#line{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+}
+
+.copyrights{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyrights span{
+    font-size: 18px;
+}
+
+.copyrights a{
+    color: white;
+}
+
+@media (width=1024px) {
+    .footer{
+        gap: 20px;
+    }
+}
+
+@media (width<1024px) {
+    .footer{
+        justify-content: center;
+    }
+}

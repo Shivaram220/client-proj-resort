@@ -1,0 +1,312 @@
+/* -------------------------------------slide------------------ */
+
+.SlidesParent{
+    display: flex;
+    width: 100%;
+}
+
+#homeimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.HomeTitles {
+    text-align: center;
+}
+
+.HomeContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    padding: 10px;
+}
+
+.HomeTAndReq{
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.HomeTitles{
+    h1{
+        font-weight: bold;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+.HomeReq a{
+    padding: 15px 30px;
+    background-color: #006241;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.HomeSlideBtnLeft,.HomeSlideBtnRight{
+    position: absolute;
+    top: 78.93px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.HomeSlideBtnLeft{
+    left: 25px;
+}
+
+.HomeSlideBtnRight{
+    right: 25px;
+}
+
+.HomeReq{
+    text-align: center;
+}
+
+#HSB button{
+    border: none;
+    background-color: green;
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#HSB button i{
+    width: 23px;
+}
+
+@media (width<1024px) {
+    .HomeTAndReq {
+        gap: 40px;
+    }
+}
+
+@media (width<=769px) {
+    #HSB button{
+        opacity: 0.8;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------form-------------------------- */
+
+.ContactusSection2{
+    padding: 70px 60px;
+    background: linear-gradient(to right, #d3f8d3, white);
+    overflow: hidden;
+}
+
+.ContactusSection2Main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ContactusSection2MainContainer1{
+    width: 50%;
+}
+
+/* .CS2MC1Img {
+    padding-right: 60px;
+    
+}
+
+.CS2MC1Img img{
+    width: 100%;
+    max-width: 640px;
+} */
+
+
+.CS2MC1FormMain{
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #006241;
+    color: white;
+    border-radius: 25px;
+}
+
+.CS2MC1FormMain form{
+    width: 100%;
+    font-size: 24px;
+}
+
+.CS2MC1FMContext {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+.CS2MC1FMCInput input {
+    width: -webkit-fill-available;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.CS2MC1FMCInput input[type="text"],input[type="tel"],input[type="email"]{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+.CS2MC1FMCLabel span{
+    color: red;
+}
+
+.CS2MC1FMSR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CS2MC1FMCTextArea textarea {
+    width: -webkit-fill-available;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    border: 1px solid gray;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+#CS2MC1FMSBtn button {
+    height: 50px;
+    width: 120px;
+    background-color: #d3f8d3;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+}
+
+#CS2MC1FMSBtn button:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.okieThanks{
+    color: white;
+    margin-left: 15px;
+    display: none;
+}
+
+.okieThanks .fa-solid{
+    font-size: 36px;
+}
+
+.CS2MC1FMSRSubmit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#successIcon {
+    animation: 3s fadeInOut linear;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+
+.ContactusSection2MainContainer2{
+    width: 50%;
+    opacity: 1;
+}
+
+.ContactusSection2MainContainer2Titles{
+    color: black;
+    padding: 60px;
+    padding-right: 0px;
+}
+
+.CS2MC2TH1 h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.CS2MC2TPara span {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.CS2MC2TPara p{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+.plspopup.active .ContactusSection2MainContainer2{
+    animation: 2.3s clouds linear;
+    opacity: 1;
+}
+
+@media (width<1024px) {
+    .ContactusSection2MainContainer1,.ContactusSection2MainContainer2{
+        width: auto;
+    }
+    .ContactusSection2MainContainer2Titles{
+        padding: 0px;
+    }
+    .ContactusSection2{
+        padding: 70px 30px;
+    }
+}
