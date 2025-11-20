@@ -387,6 +387,28 @@ Visakhapatnam 530002</a>
         </div>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="Js/index.js"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('mainvideo');
+    if (!video) return;
     
+    // When ended, disable replay
+    video.addEventListener('ended', function() {
+      video.pause();
+      video.currentTime = 0;
+      video.autoplay = false;
+      video.removeAttribute('autoplay');
+    });
+
+    // Optional: safety check to prevent automatic replay
+    video.addEventListener('play', function() {
+      if (video.currentTime > 0) {
+        // Already played once
+        video.pause();
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
