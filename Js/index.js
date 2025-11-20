@@ -25,8 +25,20 @@ function Navbar(){
 
 
 
+    const video = document.getElementById('mainvideo');
 
+    video.addEventListener('ended', () => {
+        video.pause();            // Stop video completely
+        video.currentTime = 0;    // Reset to start (optional)
+        video.autoplay = false;   // Prevent autoplay again
+    });
 
+    // Extra safety: Prevent accidental looping on slow loading
+    video.addEventListener('play', () => {
+        if (video.currentTime > 0) {
+            video.pause();
+        }
+    });
 
 
 // Home Images Slide JS
